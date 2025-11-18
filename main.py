@@ -1,7 +1,19 @@
 from turtle import *
 import math
 
-def koch(order, size):
+def koch(order: int, size: float) -> None:
+    '''
+    The function draws a Koch curve of a given order and size recursively.
+
+    Args:
+        order (int):  The depth of the recursion (the order of the curve).
+        if order=0 - straight line
+        size (float): Length of the current curve segment
+
+    Returns:
+        None: The function draws and does not return values.
+    '''
+    
     if order == 0:
         forward(size)
     else:
